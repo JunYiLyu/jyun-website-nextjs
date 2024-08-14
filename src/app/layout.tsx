@@ -20,7 +20,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navbar />
         {children}
-        <div className="w-full flex justify-end">
+        <div className="my-10 pr-10 w-full flex justify-end">
             <a target="_blank" href="https://icons8.com/icon/4m1WFHgjx88b/j">J</a><span className="mx-1">{' '}icon by{' '}</span><a target="_blank" href="https://icons8.com">Icons8</a>
           </div>
       </body>

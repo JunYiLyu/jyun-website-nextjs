@@ -2,6 +2,8 @@ import Image from 'next/image';
 
 export default function Logo() {
     return (
-        <Image src="/j-icon.png" alt="Logo" width={60} height={60}/>
+        <div className='flex items-center'>
+            <Image src="/j-icon.png" alt="Logo"  width={50} height={50}/>
+        </div>
     );
 }

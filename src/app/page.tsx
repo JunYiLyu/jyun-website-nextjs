@@ -1,14 +1,9 @@
+import Image from 'next/image';
+
 export default function Home() {
   return (
-    <>
-      <div className="container mx-auto px-4">
-        <h1>Hello word</h1>
-        <p>This is a content to make our page longer</p>
-        <div className="w-full h-screen bg-green-300"></div>
-        <p>
-          Lorem Ipsum is simply dummy text ...
-        </p>
+      <div className="flex justify-center my-10">
+            <Image src={'/meme-cat.png'} alt='Wowowowow' sizes='100vw' width={0} height={0} style={{width:'50%', height: 'auto'}}/>
       </div>
-    </>
   );
 }

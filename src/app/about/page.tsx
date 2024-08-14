@@ -5,29 +5,27 @@ export default function About() {
     return (
         <div className="flex flex-col  justify-center">
             <div className="w-full flex flex-row">
-                <div className="flex mt-20 ml-20 flex-col basis-3/5">
-                    <h1 className="text-5xl">嗨 我是俊毅</h1>
-                    <p className="my-5">
-                        I love pizza.
-                    </p>
-                    <p className="my-5">
-                        I love pizza.
-                    </p>
-                    <p className="my-5">
-                        I love pizza.
+                <div className="flex px-10 flex-col basis-1/2 justify-center">
+                    <h1>#  嗨!!我是俊毅</h1>
+                    <p className="my-5 leading-relaxed">
+                        來自新竹的軟體工程師，先前主要是開發後端為主，目前正在學習前端技術。嘗試使用Next.js 14 {'('}App Router{')'}, Material Ui 與 TailwindCSS 來建立這個網站，希望能夠透過這個網站來記錄自己的學習歷程。
                     </p>
                 </div>
-                <div className="basis-2/5">
+                <div className="basis-1/2">
                     <Image src={'/me.png'}
                         alt="I'm JyunYi"
                         width={0}
                         height={0}
                         sizes="100vw"
-                        style={{ width: '100%', height: 'auto' }}
+                        style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
                     />
                 </div>
             </div>
-            <AlternateTimeline />
+            <div>
+                <h1 className="ml-10 mt-20"># 經歷</h1>
+                <AlternateTimeline />
+            </div>
+            
         </div>
     );
 }
