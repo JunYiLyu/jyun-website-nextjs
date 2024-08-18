@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/app/components/nav/navbar";
+import Navbar from "@/components/nav/navbar";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,10 +23,23 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navbar />
         {children}
-        <div className="my-10 pr-10 w-full flex justify-end">
-            <a target="_blank" href="https://icons8.com/icon/4m1WFHgjx88b/j">J</a><span className="mx-1">{' '}icon by{' '}</span><a target="_blank" href="https://icons8.com">Icons8</a>
-          </div>
+        <Footer />
       </body>
     </html>
+  );
+}
+
+function Footer() {
+  return (
+    <div className="my-10 w-full flex flex-col border-t-4 justify-center items-center">
+      <div className="flex mt-5">
+        <Link href="https://www.linkedin.com/in/jyun-yi-lyu-127453188/" target="_blank" className="mx-2">
+          <LinkedInIcon className="hover:drop-shadow-lg "/>
+        </Link>
+        <Link href="https://github.com/JunYiLyu" target="_blank" className="">
+          <GitHubIcon className="hover:drop-shadow-lg "/>
+        </Link>
+      </div>
+    </div>
   );
 }
