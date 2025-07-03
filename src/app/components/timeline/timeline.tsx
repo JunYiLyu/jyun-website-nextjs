@@ -33,8 +33,11 @@ export default function AlternateTimeline() {
                     <TimelineConnector />
                 </CustomTimelineSeparator>
                 <TimelineContent>
-                    <p className='font-bold'>星通資訊 軟體工程師</p>
-                    <p className='hidden md:mt-3 md:block'>基於 Java EE MVC 框架改寫老舊的 VB6 網管系統、使用 Ext.js 開發前端頁面</p>
+                    <p className='font-bold'>星通資訊 全端工程師</p>
+                    <p className='hidden md:mt-3 md:block'>1. 開發核心網管系統，建置診斷、TDM Cross Connect 及 PSN VLAN 設定模組，優化使用者操作體驗</p>
+                    <p className='hidden md:mt-1 md:block'>2. Oracle DB 移植到 Mysql DB 兼容性研究</p>
+                    <p className='hidden md:mt-1 md:block'>3. 採用純 Java EE Servlet 實現後端業務邏輯，並基於 MVC 架構開發</p>
+                    <p className='hidden md:mt-1 md:mb-3 md:block'>4. 前端開發採用 Ext.js 使用 desktop, window 元件構建類似作業系統 GUI 的網管系統介面</p>
                 </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -49,7 +52,9 @@ export default function AlternateTimeline() {
                 </CustomTimelineSeparator>
                 <TimelineContent>
                     <p className='font-bold'>華碩電腦 後端工程師</p>
-                    <p className='hidden md:mt-3 md:block'>使用 .NET Core 6 框架來開發後端業務邏輯，並透過 Entity Framework Core (EF Core) 操作 SQL Server 資料庫，打造一個資產管理系統。這個系統將提供一系列 API，方便客戶端及前端系統進行整合，以實現電腦資產的全面收集與管理應用</p>
+                    <p className='hidden md:mt-3 md:block'>1. 使用 C# .NET 框架與 EF Core ORM 整合 SQL Server，開發資產管理應用程式後端業務邏輯，確保系統的穩定性與數據完整性</p>
+                    <p className='hidden md:mt-1 md:block'>2. 將單體服務架構轉型為微服務，分為檔案服務、應用程式服務、加密服務</p>
+                    <p className='hidden md:mt-1 md:block'>3. 參與 code reivew 找出潛在程式問題</p>
                 </TimelineContent>
             </TimelineItem>
             <TimelineItem>
