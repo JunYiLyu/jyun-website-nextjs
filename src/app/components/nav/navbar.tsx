@@ -13,7 +13,7 @@ import { useRouter } from "next/navigation";
 const options = [
     '關於我',
     '文章',
-    '專案'
+    // '專案'
 ];
 const ITEM_HEIGHT = 48;
 
@@ -40,7 +40,7 @@ const Navbar = () => {
 const HorizontalMenu = ({ pathname }: { pathname: String }) => {
     const aboutCss = pathname === "/about" ? "underline" : "";
     const blogCss = pathname === "/blog" ? "underline" : "";
-    const projectCss = pathname === "/project" ? "underline" : "";
+    // const projectCss = pathname === "/project" ? "underline" : "";
 
     return (
         <ul className="hidden md:flex gap-x-8">
@@ -52,11 +52,6 @@ const HorizontalMenu = ({ pathname }: { pathname: String }) => {
             <li>
                 <Link href="/blog">
                     <p className={`hover:drop-shadow-lg ${blogCss}`}>文章</p>
-                </Link>
-            </li>
-            <li>
-                <Link href="/project">
-                    <p className={`hover:drop-shadow-lg ${projectCss}`}>專案</p>
                 </Link>
             </li>
         </ul>

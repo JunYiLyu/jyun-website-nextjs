@@ -1,3 +1,6 @@
+  ![0](https://drive.google.com/thumbnail?sz=w900&id=1hSEsgNaGYViYG25oDGMdojmwC5TPDrI6)
+
+
 # Next.js App Router
 
 # Rendering
@@ -8,7 +11,7 @@
     1. 優點:頁面加入比較快(不用等server render) ，切換頁面會比SSR流暢
     2. 缺點:第一次加載比較慢，要等 bundle js 下載完開始渲染，而SEO也較差
     
-    ![Untitled](Next%20js%20App%20Router%20b72581d1a70f446c8b5b1fc1db115ee8/Untitled.png)
+    ![1](https://drive.google.com/thumbnail?sz=w900&id=1fCRDyueaQwXq2cfgj4dzmuL7GpS8YDEa)
     
 2. ***Server Side Rendering***: 對於client 請求，server 都會回傳 render 完的 HTML
     1. 優點:  使用者可以馬上跟網頁互動(不用像 CSR 要等 bundle js 加載)，
@@ -16,7 +19,7 @@
     2. 缺點: Server Loading 重，切換頁面較不流暢(需要等待render?? 但也不一定有些是 static)，
     無支援 window, storage api..
     
-    ![Untitled](Next%20js%20App%20Router%20b72581d1a70f446c8b5b1fc1db115ee8/Untitled%201.png)
+    ![2](https://drive.google.com/thumbnail?sz=w900&id=1ZyYpXyWbibpyoek03Jtj2BBY5bXlvT3v)
     
 3. ***Static Side Generation***: 在server build時候就產生出 HTML
     1. 優點: 快，對 serve loading 小
@@ -50,9 +53,9 @@
 
 ### /(src)/app
 
-![Untitled](Next%20js%20App%20Router%20b72581d1a70f446c8b5b1fc1db115ee8/Untitled%202.png)
+![3](https://drive.google.com/thumbnail?sz=w900&id=1VSQGnYJGrxWcMfcKRk-rklMili4z8Vd_)
 
-![Untitled](Next%20js%20App%20Router%20b72581d1a70f446c8b5b1fc1db115ee8/Untitled%203.png)
+![4](https://drive.google.com/thumbnail?sz=w900&id=1zoYYV5TdMyALoVxOUgvCToCTNy5ObTVF)
 
 1. 若該資料夾沒有 `page.tsx` 就不會被當成 router segment，就可以開/components、/utils 放一些共用元件
 2. `layout.tsx` `template.tsx` ，可以共用讓子segment 共用元件，`layout.tsx` 在頁面切換***不會***重新渲染，而 `template.tsx` 會重新渲染。只有**root layout**可以包含， html  body tag
@@ -66,11 +69,11 @@ vercel 新開發出來的打包工具(Rust 寫的)，目前僅能用在 nextjs�
 
 # Page Router
 
-![Untitled](Next%20js%20App%20Router%20b72581d1a70f446c8b5b1fc1db115ee8/Untitled%204.png)
+![5](https://drive.google.com/thumbnail?sz=w900&id=1VCofqQlD3SFTCwG1TKv-pXNOPZQCbWQ2)
 
 # App Router
 
-![Untitled](Next%20js%20App%20Router%20b72581d1a70f446c8b5b1fc1db115ee8/Untitled%205.png)
+![6](https://drive.google.com/thumbnail?sz=w900&id=1q5t_GS_6uCysa2EvcVHJOPfBoX1Dr2-M)
 
 `page.tsx` 使用來定義 UI 的檔案
 
@@ -79,15 +82,15 @@ vercel 新開發出來的打包工具(Rust 寫的)，目前僅能用在 nextjs�
 1. root laytout : 於 app 下的 layout 會影響後續子資料夾內的regular layout
 2. regular layout 
 
-![Untitled](Next%20js%20App%20Router%20b72581d1a70f446c8b5b1fc1db115ee8/Untitled%206.png)
+![7](https://drive.google.com/thumbnail?sz=w900&id=1oODD6eiLkWX9yQ4ZKaZYdfK_1ib_-SR1)
 
-![Untitled](Next%20js%20App%20Router%20b72581d1a70f446c8b5b1fc1db115ee8/Untitled%207.png)
+![8](https://drive.google.com/thumbnail?sz=w900&id=1A1_cS6TzEbw3hANN-qU_-g_DeiQLG9AG)
 
 ---
 
 # Server Component
 
-![Untitled](Next%20js%20App%20Router%20b72581d1a70f446c8b5b1fc1db115ee8/Untitled%208.png)
+![9](https://drive.google.com/thumbnail?sz=w900&id=15MuOn-ZnhSdlf6Ava9ItSFc2z-b9Ppfb)
 
 - Next App Router 預設為 Server Component ，使用 `'use client'` 可轉換為 Client Component
 - Server / Client Component，中的 Server/Client 指的是 React Server 跟 React Client ，並不是指實體的
@@ -107,17 +110,17 @@ vercel 新開發出來的打包工具(Rust 寫的)，目前僅能用在 nextjs�
 
 # Suspense
 
-![Untitled](Next%20js%20App%20Router%20b72581d1a70f446c8b5b1fc1db115ee8/Untitled%209.png)
+![10](https://drive.google.com/thumbnail?sz=w900&id=1h6iLWAobjsYZRNIFT1YmC08l5gwelKjv)
 
 # Error Boundaries
 
 # 動態路由
 
-![Untitled](Next%20js%20App%20Router%20b72581d1a70f446c8b5b1fc1db115ee8/Untitled%2010.png)
+![12](https://drive.google.com/thumbnail?sz=w900&id=1a4GFC0k9TXNrtAarEIti7i5NGnj1EV_i)
 
 找不到 [id] 還可以有default page
 
-![Untitled](Next%20js%20App%20Router%20b72581d1a70f446c8b5b1fc1db115ee8/Untitled%2011.png)
+![13](https://drive.google.com/thumbnail?sz=w900&id=12maUJjtUkoL6BW92NEIcDqxTKKBhx6dy)
 
 # Link useRouter
 
@@ -155,13 +158,13 @@ router.forward() // 下一頁
 
 可以在app 層建立 `(xxxx)` 底下的segment，就不會吃到  app 的 layout 了
 
-![Untitled](Next%20js%20App%20Router%20b72581d1a70f446c8b5b1fc1db115ee8/Untitled%2012.png)
+![14](https://drive.google.com/thumbnail?sz=w900&id=1AcHtQdJwPj0EAfwK3g91j6wj-Q5rLguy)
 
 # Parallel Routies
 
 folder 命名為 `@xxxx` 可以在 page 中的 props 載入該頁面，包含他的 error loading
 
-![Untitled](Next%20js%20App%20Router%20b72581d1a70f446c8b5b1fc1db115ee8/Untitled%2013.png)
+![15](https://drive.google.com/thumbnail?sz=w900&id=1z7PbDkgyzKEyV9lNKF--Y0hB6sR57IXD)
 
 # **Intercepting Routes**
 
@@ -169,7 +172,7 @@ folder 命名為 `@xxxx` 可以在 page 中的 props 載入該頁面，包含他
 
 命名方式
 
-![Untitled](Next%20js%20App%20Router%20b72581d1a70f446c8b5b1fc1db115ee8/Untitled%2014.png)
+![16](https://drive.google.com/thumbnail?sz=w900&id=134E65681GxmxCPgS_yTXPhKwBE3ZWjbm)
 
 # Router Handler
 
@@ -292,29 +295,27 @@ export default function ToDo() {
 
 1. 每次清除快取
     
-    ![Untitled](Next%20js%20App%20Router%20b72581d1a70f446c8b5b1fc1db115ee8/Untitled%2015.png)
+    <!-- ![17]() -->
     
 2. 定時清除快取
     
-    ![Untitled](Next%20js%20App%20Router%20b72581d1a70f446c8b5b1fc1db115ee8/Untitled%2016.png)
+    <!-- ![Untitled](Next%20js%20App%20Router%20b72581d1a70f446c8b5b1fc1db115ee8/Untitled%2016.png)-->
     
-    ![Untitled](Next%20js%20App%20Router%20b72581d1a70f446c8b5b1fc1db115ee8/Untitled%2017.png)
+    ![19](https://drive.google.com/thumbnail?sz=w900&id=1NdRjZn4i22SJydMnEIuTpce1BGbowTkp) 
     
 
 ### Request Memoization
 
-![Untitled](Next%20js%20App%20Router%20b72581d1a70f446c8b5b1fc1db115ee8/Untitled%2018.png)
+<!-- ![20]() -->
 
 將 Fetch 回來的資料 放在記憶體，若有其他 component 也打了一樣 API，實際上不會送request 而是去記憶體拿 (在server  rendering 階段)
 
 禁用 request memoization
 
-![Untitled](Next%20js%20App%20Router%20b72581d1a70f446c8b5b1fc1db115ee8/Untitled%2019.png)
+<!-- ![Untitled](Next%20js%20App%20Router%20b72581d1a70f446c8b5b1fc1db115ee8/Untitled%2019.png) -->
 
 # Full Route Cache
 
 使用<Link>，假設 A B C 三頁面都有各打API去取得隨機動態資料，但使用 <Link>在這三個頁面輪替，資料並沒有改變，因為next 對於 segment 靜態頁面(**Server 在 build 時就產生出來**)的快取，如果是每次打 request 動態渲染就不會
 
-![Untitled](Next%20js%20App%20Router%20b72581d1a70f446c8b5b1fc1db115ee8/Untitled%2020.png)
-
-[問題](https://www.notion.so/03585a7b69db427db32706b5346d2fa7?pvs=21)
+![22](https://drive.google.com/thumbnail?sz=w900&id=1vbLv7jeWnbcN5poYAQ_OM7l3ntWqwgEc)

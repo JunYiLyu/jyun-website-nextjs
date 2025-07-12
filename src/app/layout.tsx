@@ -20,6 +20,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/prismjs@1.30.0/themes/prism-tomorrow.css"
+          />
+      </head>
       <body className={inter.className}>
         <Navbar />
         {children}
