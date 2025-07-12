@@ -14,7 +14,7 @@ h3 {
     @apply text-lg md:text-xl font-semibold;
 }
 
-p {
+li, p, span {
     @apply text-xs md:text-base;
 }
 

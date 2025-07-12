@@ -7,9 +7,9 @@ export default function BlogLayout({
 }) {
 
     return (
-        <div className="flex items-stretch h-full">
+        <div className="h-full md:flex">
             <F1Block />
-            <div className="flex-[3]">
+            <div className="mx-10 md:flex-[3]">
                 {children}
             </div>
             <F1Block />
@@ -19,6 +19,6 @@ export default function BlogLayout({
 
 function F1Block() {
     return (
-        <div className="flex-1" />
+        <div className="hidden md:flex-1 md:block" />
     );
 }
