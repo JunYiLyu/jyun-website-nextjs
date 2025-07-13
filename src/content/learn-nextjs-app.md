@@ -106,7 +106,7 @@ vercel 新開發出來的打包工具(Rust 寫的)，目前僅能用在 nextjs�
 3. 只要定義出 ‘use client’ 後他的子元建，就會是 client component
 4. import 'client-only' 可以讓一些模組只能運行在 Client Component
 5. Client Component  盡量是最小單位的 leaf component，例如 context provider 也要建立一個 tsx 標示為 `'use client'` ，在Root 的 Server Component 再 import 近來
-6. 可以測試 client component 調用 local Storage 會不會炸裂
+6. 並不代表只會在 browser 運行，它會在 server 進行部分的初始 render ，要互動的才會在 browser 上運行
 
 # Suspense
 
