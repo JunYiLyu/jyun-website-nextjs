@@ -16,7 +16,7 @@ export default async function Page({
 
 // 預先產生靜態 HTML
 export function generateStaticParams() {
-    return [{ slug: 'learn-nextjs-app', }, { slug: 'react' }]
+    return [{ slug: 'learn-docker' }, { slug: 'learn-nextjs-app', }, { slug: 'react' }]
 }
 
 export const dynamicParams = false // 不允許動態路由參數
