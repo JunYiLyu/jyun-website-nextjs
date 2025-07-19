@@ -14,19 +14,19 @@ h3 {
     @apply text-lg md:text-xl font-semibold;
 }
 
-ol {
+.post-css ol {
     @apply list-decimal pl-6;
 }
 
-ol ol {
+.post-css ol ol {
     list-style-type: lower-alpha;
 }
 
-ol ol ol {
+.post-css ol ol ol {
     list-style-type: lower-roman;
 }
 
-ul {
+.post-css ul {
     @apply list-disc pl-6;
 }
 
