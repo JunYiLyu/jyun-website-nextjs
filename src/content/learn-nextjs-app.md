@@ -319,3 +319,6 @@ export default function ToDo() {
 使用<Link>，假設 A B C 三頁面都有各打API去取得隨機動態資料，但使用 <Link>在這三個頁面輪替，資料並沒有改變，因為next 對於 segment 靜態頁面(**Server 在 build 時就產生出來**)的快取，如果是每次打 request 動態渲染就不會
 
 ![22](https://drive.google.com/thumbnail?sz=w900&id=1vbLv7jeWnbcN5poYAQ_OM7l3ntWqwgEc)
+
+# Ref.
+https://ithelp.ithome.com.tw/users/20161853/ironman/6122

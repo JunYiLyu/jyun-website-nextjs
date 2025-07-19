@@ -13,6 +13,7 @@ export default function Page() {
             <h1 className=''>筆記</h1>
             <div className="mt-5 min-h-80">
                 {[
+                    { href: '/blog/solr', title: 'Solr 名詞理解' },
                     { href: '/blog/learn-docker', title: 'Docker 筆記' },
                     { href: '/blog/learn-nextjs-app', title: 'Next.js 學習雜記' },
                     { href: '/blog/react', title: 'React 學習雜記' }
